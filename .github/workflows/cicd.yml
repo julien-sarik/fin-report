@@ -46,6 +46,7 @@ jobs:
         with:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
+          working-directory: ./app
       - name: Setup Pages
         uses: actions/configure-pages@v3
         with:
