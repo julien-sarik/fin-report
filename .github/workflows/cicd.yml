@@ -73,6 +73,8 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         working-directory: ./app
+      - name: lis
+        run: ls -al app
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
